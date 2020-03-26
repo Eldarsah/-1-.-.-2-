@@ -45,8 +45,8 @@ int main()
             p.setYear(year);
             break;
         case(4):
-            name=p.getName();
-            surname=p.getSurname();
+            name=p.getName(name);
+            surname=p.getSurname(surname);
             year = p.getYear();
             cout<<"Name:"<<name<<endl;
             cout<<"Surname:"<<surname<<endl;
