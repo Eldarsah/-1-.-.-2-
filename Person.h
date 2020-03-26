@@ -19,8 +19,8 @@ public:
     void setSurname(char *);
     void setYear(int);
 
-    char *getName();
-    char *getSurname();
+    char *getName(char *name) const;
+    char *getSurname(char *surname) const;
     int getYear();
 
     void print();
