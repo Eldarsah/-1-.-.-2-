@@ -29,13 +29,13 @@ void Person::setYear(int year)
 {
     this->year=year;
 }
-char Person::getName()
+char *Person::getName()
 {
-    return *name;
+    return name;
 }
-char Person::getSurname()
+char *Person::getSurname()
 {
-    return *surname;
+    return surname;
 }
 int Person::getYear()
 {
@@ -52,5 +52,3 @@ Person::~Person()
     delete [] name;
     delete [] surname;
 }
-
-
