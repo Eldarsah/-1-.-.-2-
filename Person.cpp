@@ -29,12 +29,14 @@ void Person::setYear(int year)
 {
     this->year=year;
 }
-char *Person::getName()
+char *Person::getName(char *name) const
 {
+    strcpy(name, this->name);
     return name;
 }
-char *Person::getSurname()
+char *Person::getSurname(char *surname) const
 {
+    strcpy(surname, this->surname);
     return surname;
 }
 int Person::getYear()
@@ -52,3 +54,5 @@ Person::~Person()
     delete [] name;
     delete [] surname;
 }
+
+
